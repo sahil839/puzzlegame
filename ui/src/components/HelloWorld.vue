@@ -20,7 +20,7 @@
 
 <script>
 export default{
-  name:'HelloWorld',
+  name: 'HelloWorld',
   data () {
     return {
       src1: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
