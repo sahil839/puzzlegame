@@ -1,94 +1,32 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li>
-        <a
-          href="https://vuejs.org"
-          target="_blank"
-        >
-          Core Docs
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://forum.vuejs.org"
-          target="_blank"
-        >
-          Forum
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://chat.vuejs.org"
-          target="_blank"
-        >
-          Community Chat
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://twitter.com/vuejs"
-          target="_blank"
-        >
-          Twitter
-        </a>
-      </li>
-      <br>
-      <li>
-        <a
-          href="http://vuejs-templates.github.io/webpack/"
-          target="_blank"
-        >
-          Docs for This Template
-        </a>
-      </li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li>
-        <a
-          href="http://router.vuejs.org/"
-          target="_blank"
-        >
-          vue-router
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vuex.vuejs.org/"
-          target="_blank"
-        >
-          vuex
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vue-loader.vuejs.org/"
-          target="_blank"
-        >
-          vue-loader
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-        >
-          awesome-vue
-        </a>
-      </li>
-    </ul>
-  </div>
+<v-app id="inspire">
+  <v-carousel ma-0 id="imp" style="height:100%">
+    <v-carousel-item :src="src1" id="img1">
+    <v-jumbotron dark>
+             <v-container fill-height>
+              <v-layout align-center>
+             <v-flex>
+                  <h3 class="display-3">WELCOME TO WORLD OF PUZZLES</h3>
+              </v-flex>
+              </v-layout>
+   </v-container>
+    </v-jumbotron></v-carousel-item>
+ <v-carousel-item :src="src2" id="img2"></v-carousel-item>
+<v-carousel-item :src="src3" id="img3" ></v-carousel-item>
+<v-carousel-item :src="src4" id="img4"></v-carousel-item>
+  </v-carousel>
+</v-app>
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
+export default{
+  name:'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      src1: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+      src2: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+      src3: 'https://cdn.pixabay.com/photo/2016/03/16/16/27/puzzle-1261138__340.jpg',
+      src4: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
     }
   }
 }
@@ -96,18 +34,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+#inspire{
+  height: 100vh;
+ }
 </style>
