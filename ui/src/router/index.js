@@ -13,7 +13,7 @@ export default new Router({
     },
     {
       path: '/genre',
-      component:genre,
+      component: genre
     }
   ]
 })

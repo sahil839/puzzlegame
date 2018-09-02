@@ -5,7 +5,7 @@
   <v-hover>
   <v-container grid-list-xl>
      <v-layout row wrap>
-       <v-flex xs12 sm6 md6 v-for="card in cards">
+       <v-flex xs12 sm6 md6 v-for="card in cards" :key="card">
          <v-card hover=true id="card" color="brown lighten-2"
          >
            <v-card-media
@@ -39,31 +39,31 @@
 import Toolbar from './toolbar.vue'
 export default {
   name: 'App',
-  components:{
-  'Toolbar':Toolbar
+  components: {
+    'Toolbar': Toolbar
   },
-  data(){
-    return{
-        cards:[
-            {
-              src:'http://thecsrjournal.in/wp-content/uploads/2017/04/Sports-I.jpg',
-              genre:'Sports'
-            },
-            {
-              src:'http://www.priorparkcollege.com/resources/images/general/_hero/politics-2.PNG',
-              genre:'Politics'
-            },
-            {
-              src:'https://www.colourbox.com/preview/4233974-old-vintage-golden-compass-on-ancient-map.jpg',
-              genre:'History'
-            },
-            {
-              src:'https://cdn.thisiswhyimbroke.com/images/fractal-jigsaw-640x533.jpg',
-              genre:'Puzzle'
-            },
-        ]
+  data () {
+    return {
+      cards: [
+        {
+          src: 'http://thecsrjournal.in/wp-content/uploads/2017/04/Sports-I.jpg',
+          genre: 'Sports'
+        },
+        {
+          src: 'http://www.priorparkcollege.com/resources/images/general/_hero/politics-2.PNG',
+          genre: 'Politics'
+        },
+        {
+          src: 'https://www.colourbox.com/preview/4233974-old-vintage-golden-compass-on-ancient-map.jpg',
+          genre: 'History'
+        },
+        {
+          src: 'https://cdn.thisiswhyimbroke.com/images/fractal-jigsaw-640x533.jpg',
+          genre: 'Puzzle'
+        }
+      ]
     }
-  },
+  }
 }
 </script>
 
