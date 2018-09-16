@@ -6,7 +6,7 @@
   <v-container grid-list-xl>
      <v-layout row wrap>
        <v-flex xs12 sm6 md6 v-for="card in cards" :key="card">
-         <v-card hover=true id="card" color="brown lighten-2"
+         <v-card hover=true id="card" color="cyan dark"
          >
            <v-card-media
            :src="card.src"
@@ -23,7 +23,7 @@
                </div>
              </v-card-title>
              <v-card-actions>
-            <v-btn flat color="orange">Explore</v-btn>
+            <v-btn flat color="blue darken-3">Explore</v-btn>
           </v-card-actions>
 
          </v-card>
@@ -70,7 +70,7 @@ export default {
 <style scoped>
 #inspire{
   padding-top:30px;
-  background-color:#D7CCC8;
+  background-color:#E0F2F1;
 }
 #media-card{
   transition:transform 2s,opacity 0s linear 0.5s;
