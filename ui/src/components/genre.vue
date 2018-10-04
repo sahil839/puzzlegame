@@ -2,11 +2,10 @@
   <div id="app">
   <Toolbar></Toolbar>
   <v-app id="inspire">
-  <v-hover>
   <v-container grid-list-xl>
      <v-layout row wrap>
        <v-flex xs12 sm6 md6 v-for="card in cards" :key="card">
-         <v-card hover=true id="card" color="cyan dark"
+         <v-card id="card" color="cyan dark"
          >
            <v-card-media
            :src="card.src"
@@ -17,7 +16,7 @@
            About Genre hi try this genre play
            </div>
              </v-card-media>
-          <v-card-title primary-title=false id="genre-name">
+          <v-card-title  id="genre-name">
                <div >
                  <h3 class="headline" >{{card.genre}}</h3>
                </div>
@@ -25,12 +24,10 @@
              <v-card-actions>
             <v-btn flat color="blue darken-3">Explore</v-btn>
           </v-card-actions>
-
-         </v-card>
+          </v-card>
        </v-flex>
      </v-layout>
      </v-container>
-     </v-hover>
    </v-app>
   </div>
 </template>
