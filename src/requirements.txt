@@ -1,4 +1,4 @@
 compizconfig-python==0.9.12.3
-Django==1.9.1
-djangorestframework==3.8.2
+django>=1.11.19
+djangorestframework>=3.9.1
 djangorestframework-jwt==1.11.
